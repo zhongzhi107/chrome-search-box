@@ -1,0 +1,42 @@
+{
+  "chrome_extension_name": {
+    "message": "Chrome Search Box"
+  },
+  "chrome_extension_description": {
+    "message": "This is a chrome plugin for custom search engine."
+  },
+  "browser_action_title": {
+    "message": "Search..."
+  },
+  "popup_title": {
+    "message": "Search Engine List"
+  },
+  "popup_delete_label": {
+    "message": "Remove"
+  },
+  "popup_delete_confirm": {
+    "message": "Are you sure remove item?"
+  },
+  "popup_add_button": {
+    "message": "Add new"
+  },
+  "popup_name_placeholder": {
+    "message": "Add a new search engine"
+  },
+  "popup_url_placeholder": {
+    "message": "website(\"%s\" replace keyword)"
+  },
+  "omnibox_suggestion": {
+    "message": "<dim>Search <match>$keyword$</match> in <url>$engine$</url></dim> ",
+    "placeholders": {
+      "engine": {
+        "content": "$1",
+        "example": "Baidu"
+      },
+      "keyword": {
+        "content": "$2",
+        "example": "test"
+      }
+    }
+  }
+}

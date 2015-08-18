@@ -1,0 +1,24 @@
+{
+  "name": "__MSG_chrome_extension_name__",
+  "version": "1.0",
+  "default_locale": "zh_CN",
+  "manifest_version": 2,
+  "description": "__MSG_chrome_extension_description__",
+  "options_page": "option.html",
+  "permissions": [
+    "tabs", "http://*/*", "https://*/*"
+  ],
+  "omnibox": { "keyword" : "sb" },
+  "icons" : {
+    "16" : "icons/search-16.png",
+    "48" : "icons/search-48.png",
+    "128" : "icons/search-128.png"
+  },
+  "background": { "scripts": ["background.js"] },
+  "browser_action": {
+	  "default_title": "__MSG_browser_action_title__",
+	  "default_icon": "icons/search-128.png",
+    "default_popup": "popup.html"
+	},
+  "update_url": "http://clients2.google.com/service/update2/crx"
+}

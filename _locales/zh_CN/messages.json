@@ -1,0 +1,42 @@
+{
+  "chrome_extension_name": {
+    "message": "搜索框"
+  },
+  "chrome_extension_description": {
+    "message": "设置搜索使用的引擎"
+  },
+  "browser_action_title": {
+    "message": "搜索..."
+  },
+  "popup_title": {
+    "message": "搜索引擎"
+  },
+  "popup_delete_label": {
+    "message": "删除"
+  },
+  "popup_delete_confirm": {
+    "message": "确定删除吗？"
+  },
+  "popup_add_button": {
+    "message": "新增"
+  },
+  "popup_name_placeholder": {
+    "message": "添加新的搜索引擎"
+  },
+  "popup_url_placeholder": {
+    "message": "网址（用“%s”替换搜索关键字）"
+  },
+  "omnibox_suggestion": {
+    "message": "<dim>在 <url>$engine$</url> 中搜索</dim> <match>$keyword$</match>",
+    "placeholders": {
+      "engine": {
+        "content": "$1",
+        "example": "Baidu"
+      },
+      "keyword": {
+        "content": "$2",
+        "example": "test"
+      }
+    }
+  }
+}

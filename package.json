@@ -1,0 +1,19 @@
+{
+  "name": "Chrome Search By",
+  "version": "1.0.0",
+  "description": "This is a chrome plugin for custom search engine.",
+  "keywords": [
+    "chrome plugin",
+    "custom seach engine",
+    "address bar"
+  ],
+  "homepage": "http://github.com/zhongzhi107/chrome-search-by",
+  "author": {
+    "name": "Zhongzhi107",
+    "email": "zhong.zhi@163.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/zhongzhi107/chrome-search-by.git"
+  }
+}
