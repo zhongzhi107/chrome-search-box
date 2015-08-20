@@ -10,8 +10,9 @@ function setDefaultEngine(event) {
 }
 
 function addEngine(event) {
-  var name = document.getElementById('engineName').value.trim();
-  var url = document.getElementById('engineURL').value.trim();
+  event.preventDefault();
+  var name = document.getElementsByClassName('engineName')[0].value.trim();
+  var url = document.getElementsByClassName('engineURL')[0].value.trim();
   if (name && url) {
     engineList[name] = url;
   }
@@ -39,21 +40,31 @@ function save() {
 
 function render() {
   var html = [];
+  console.log(chrome); //000000000000
+  html.push([
+    '<tr>',
+      '<th class="o">' + chrome.i18n.getMessage('popup_operation_thead') + '</th>',
+      '<th class="name">' + chrome.i18n.getMessage('popup_name_thead') + '</th>',
+      '<th class="url">' + chrome.i18n.getMessage('popup_url_thead') + '</th>',
+    '</tr>'
+  ].join(''));
   for(var key in engineList) {
+    console.log(defaultEngine);
+    console.log(key + '\t' + defaultEngine);
     var checked = key === defaultEngine ? 'checked' : '';
     html.push([
       '<tr id="' + key + '">',
-        '<td><a href="#" class="del">' + chrome.i18n.getMessage('popup_delete_label') + '</a></td>',
-        '<td><input type="radio" name="defaultEngine" ' + checked + ' class="set-default"> ' + key + '</td>',
+        '<td><a href="#" class="btn del">' + chrome.i18n.getMessage('popup_delete_label') + '</a></td>',
+        '<td class="engine"><label><input type="radio" name="defaultEngine" ' + checked + ' class="set-default"> ' + key + '</label></td>',
         '<td>' + engineList[key] + '</td>',
       '</tr>'
     ].join(''));
   }
   html.push([
     '<tr>',
-      '<td><input type="button" id="addEngine" value="' + chrome.i18n.getMessage('popup_add_button') + '"></td>',
-      '<td><input id="engineName" placeholder="' + chrome.i18n.getMessage('popup_name_placeholder') + '"></td>',
-      '<td><input id="engineURL" placeholder="' + chrome.i18n.getMessage('popup_url_placeholder') + '"></td>',
+      '<td><a href="#" class="btn add" id="addEngine">' + chrome.i18n.getMessage('popup_add_button') + '</a></td>',
+      '<td><input class="engineName" placeholder="' + chrome.i18n.getMessage('popup_name_placeholder') + '"></td>',
+      '<td><input class="engineURL" placeholder="' + chrome.i18n.getMessage('popup_url_placeholder') + '"></td>',
     '</tr>'
   ].join(''));
   document.getElementById('list').innerHTML = html.join('');

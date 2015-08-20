@@ -4,7 +4,7 @@
   "default_locale": "zh_CN",
   "manifest_version": 2,
   "description": "__MSG_chrome_extension_description__",
-  "options_page": "option.html",
+  "options_page": "opt/option.html",
   "permissions": [
     "tabs", "http://*/*", "https://*/*"
   ],

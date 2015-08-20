@@ -1,0 +1,103 @@
+h3 {
+	margin: 0 0 0 25px;
+	padding: 25px 0 15px;
+	font-size: 1.5em;
+	font-weight: normal;
+}
+
+table {
+	width: 640px;
+	margin: 10px 0 20px 40px;
+	border: 1px solid #ccc;
+	border-spacing: 0;
+	border-collapse:collapse;
+	font-size: 14px;
+	text-align: center;
+	vertical-align: middle;
+}
+
+tbody {
+	border-radius: 6px;
+}
+
+th {
+	background: #eee;
+	font-weight: bold;
+	border: 1px solid #ccc;
+}
+
+th, td {
+	padding: 10px;
+	border: 1px solid #ccc;
+	overflow: hidden;
+}
+
+a {
+	text-decoration: none;
+}
+
+.o {
+	width: 80px;
+}
+
+.name {
+	width: 140px;
+}
+
+.url {
+	// width: 340px;
+}
+
+.engine {
+	padding-left: 30px;
+	text-align: left;
+}
+
+.engineName {
+	width: 120px;
+	height: 28px;
+	margin: 0;
+	padding: 0 10px;
+	border: 2px solid #ddd;
+	border-radius: 4px;
+}
+
+.engineURL {
+	width: 320px;
+	height: 30px;
+	margin: 1px 0;
+	padding: 0 10px;
+	border: 2px solid #ddd;
+	border-radius: 4px;
+}
+
+.btn {
+	display: inline-block;
+	height: 28px;
+	margin: auto 1px;
+	padding: 0 10px;
+	line-height: 28px;
+	text-align: center;
+	vertical-align: middle;
+	color: #fff;
+	cursor: pointer;
+	border: 0;
+	border-radius: 2px;
+	transition: background-color .5s linear;
+}
+
+.del {
+	background: #d15b47;
+}
+
+.del:hover {
+	background: #c00;
+}
+
+.add {
+	background: #00b8e7;
+}
+
+.add:hover {
+	background: #418cc6;
+}

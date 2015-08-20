@@ -11,6 +11,15 @@
   "popup_title": {
     "message": "搜索引擎"
   },
+  "popup_operation_thead": {
+    "message": "操作"
+  },
+  "popup_name_thead": {
+    "message": "引擎名稱"
+  },
+  "popup_url_thead": {
+    "message": "網址"
+  },
   "popup_delete_label": {
     "message": "刪除"
   },
