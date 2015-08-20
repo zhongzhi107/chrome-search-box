@@ -11,6 +11,15 @@
   "popup_title": {
     "message": "Search Engine List"
   },
+  "popup_operation_thead": {
+    "message": "Operation"
+  },
+  "popup_name_thead": {
+    "message": "Engine Name"
+  },
+  "popup_url_thead": {
+    "message": "URL"
+  },
   "popup_delete_label": {
     "message": "Remove"
   },
